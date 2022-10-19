@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+</head>
+<body>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calc {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+           border: 1px solid blue;
+           width: 300px;
+           background-color: blue;
+           color: white;
+           height: 80vh;
+           gap: 8px;
+           padding: 20px;
+        }
+        .calc > div:not(:first-child) {
+            background-color: rgb(2, 151, 151);
+            text-align: center;
+            padding: 10px 10px;
+        }
+        .screen {
+            background-color: black;
+            color: white;
+            text-align: right;
+            padding: 5px 6px;
+            grid-column: 1 / 4;
+        }
+
+        .plus {
+            grid-column: 2 / 4;
+        }
+        .teng {
+            grid-column: 2 / 4;
+        }
+    </style>
+    <div class="calc">
+        <div class="screen">413</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div class="plus">+</div>
+        <div>c</div>
+        <div class="teng">=</div>
+    </div>
+</body>
+</html>
